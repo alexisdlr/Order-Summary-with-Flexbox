@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(225, 100%, 94%);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container {
+    width: 375px;
+    height: 600px;
+    background-color: #eee;
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    box-shadow: 5px 10px 15px gray;
+    
+}
+.container h1 {
+    font-size: large;
+    margin-top: 30px;
+    font-size:22px;
+
+}
+.container p {
+    padding: 0 20px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.container img {
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 30px;
+    width: 80%;
+    height: 75px;
+    background-color: #ddd;
+    border-radius: 6%;
+    align-items: center; 
+
+}
+.plan i {
+    margin-left: 10px;
+}
+
+.plan-text {
+    padding: 20px 10px;
+}
+
+.plan-text h4 {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.plan-text p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.link {
+   font-size: 12px;
+   margin-left: 30px;
+}
+
+a {
+    color: hsl(245, 75%, 52%);
+}
+
+.btn {
+    width: 80%;
+    height: 35px;
+    margin: 10px 30px;
+    border-radius: 5% 5% 5% 5%;
+    border: none;
+}
+#btn1 {
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+
+}
+
+.btn:hover {
+    opacity:0.6 ;
+    transition: .5s ;
+}
+a:hover {
+    opacity:0.6 ;
+    transition: .5s ;
+}
+.attribution {
+    margin-top: 18px;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        height: 600px;   
+    } 
+    .link {
+        font-size: 12px;
+        margin-left: 8px;
+     }
+     .plan-text {
+        padding: 15px 5px;
+    }
+    .attribution {
+        margin-top: 30px;
+    }   
+}
+@media (max-width: 400px) {
+    .container {
+        width: 80%;
+        height: 550px;   
+    } 
+    .link {
+        margin-left: 30px;
+        font-size: 12px;
+     }
+    .plan {
+        margin: 20px 20px;
+    }
+    .plan i {
+        margin-left: 5px;
+     }
+     
+    .plan-text {
+        padding: 15px 0;
+    }
+    .attribution {
+        margin-top: 30px;
+    }   
+}
+@media (max-width: 350px) {
+    .container {
+        width: 80%;
+        height: 450px;   
+    } 
+    .link {
+        margin: 0;
+        font-size: 12px;
+     }
+     .plan i {
+        margin-left: 3px;
+     }
+     
+    .plan-text {
+        padding: 15px 0;
+    }
+    .attribution {
+        padding: 0 10px;
+        margin-top: 30px;
+    } 
+    .plan {
+        margin-left:20px;
+        flex-wrap: wrap;
+    }  
+}
+
